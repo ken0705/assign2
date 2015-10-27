@@ -55,14 +55,14 @@ void setup(){
   end2=loadImage("img/end2.png");
 }
 void draw(){
-  image(start1,0,0);
+  image(start2,0,0);
     switch (gameState){
     case GAME_START:
   if(mouseX>210 && mouseX<440 && mouseY>380 && mouseY<410){
     if(mousePressed){
           gameState = GAME_RUN;
     }else{
-      image(start2,0,0);
+      image(start1,0,0);
     }
   }
   break ;
@@ -137,7 +137,7 @@ void draw(){
   }
   break ;
   case GAME_OVER:
-    image(end1,0,0);
+    image(end2,0,0);
   if (mouseX>210 && mouseX<440 && mouseY>315 && mouseY<345){
     if (mousePressed){
      gameState = GAME_RUN;    
@@ -152,7 +152,7 @@ void draw(){
   x = 550;
   y = 240;
     }else{
-     image(end2,0,0);
+     image(end1,0,0);
     }
   break;
         
